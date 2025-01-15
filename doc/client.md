@@ -12,13 +12,13 @@ The following parameters are configurable for the API Client:
 The API client can be initialized as follows:
 
 ```csharp
-PplusSubscriptionPapiClient client = new PplusSubscriptionPapiClient.Builder()
-    .Environment(PplusSubscriptionPapi.Standard.Environment.Production)
+PearsonSubscriptionsAPIClient client = new PearsonSubscriptionsAPIClient.Builder()
+    .Environment(PearsonSubscriptionsAPI.Standard.Environment.Production)
     .DefaultHost("www.example.com")
     .Build();
 ```
 
-## pplus-subscription-papiClient Class
+## Pearson Subscriptions APIClient Class
 
 The gateway for the SDK. This class acts as a factory for the Controllers and also holds the configuration of the SDK.
 
@@ -43,11 +43,11 @@ The gateway for the SDK. This class acts as a factory for the Controllers and al
 | Name | Description | Return Type |
 |  --- | --- | --- |
 | `GetBaseUri(Server alias = Server.Default)` | Gets the URL for a particular alias in the current environment and appends it with template parameters. | `string` |
-| `ToBuilder()` | Creates an object of the pplus-subscription-papiClient using the values provided for the builder. | `Builder` |
+| `ToBuilder()` | Creates an object of the Pearson Subscriptions APIClient using the values provided for the builder. | `Builder` |
 
-## pplus-subscription-papiClient Builder Class
+## Pearson Subscriptions APIClient Builder Class
 
-Class to build instances of pplus-subscription-papiClient.
+Class to build instances of Pearson Subscriptions APIClient.
 
 ### Methods
 
